@@ -39,7 +39,7 @@ while True:
         else:
             totalprice = 0
             fameofcard = int(input("Fame of the card: "))
-            if fameofcard <= 200:
+            if fameofcard <= 700:
                 while True:
                     print("")
                     result55 = input("is it at least a famous user, namesnipe, old account or a card that is going up? (yes/no): ")
@@ -54,26 +54,26 @@ while True:
                     else:
                         print("")
                         print("Repeat that again, remember to answer yes or no but in lowercase...")
-            elif fameofcard <= 1000:
-                totalprice += 15
             elif fameofcard <= 2000:
                 totalprice += 30
             elif fameofcard <= 5000:
-                totalprice += 55
-            elif fameofcard <= 10000:
                 totalprice += 70
-            elif fameofcard <= 15000:
+            elif fameofcard <= 10000:
                 totalprice += 90
-            elif fameofcard <= 30000:
+            elif fameofcard <= 15000:
                 totalprice += 110
-            elif fameofcard <= 60000:
+            elif fameofcard <= 30000:
                 totalprice += 200
-            elif fameofcard <= 150000:
+            elif fameofcard <= 60000:
                 totalprice += 300
+            elif fameofcard <= 150000:
+                totalprice += 500
             else:
                 totalprice += 750
             extrabenefit = round(30 * valuebought/100)
+            extrabenefit5 = round(10 * valuebought/100)
             totalprice += (valuebought + extrabenefit)
+            totalprice += extrabenefit5
             print("")
             print("You shouldn't sell that card for less than " + str(totalprice))
             print("If you sell for "+str(totalprice)+", you get: " + str(round((60 * int(totalprice)/100))))
