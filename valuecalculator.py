@@ -39,7 +39,7 @@ while True:
         else:
             totalprice = 0
             fameofcard = int(input("Fame of the card: "))
-            if fameofcard <= 700:
+            if fameofcard <= 200:
                 while True:
                     print("")
                     result55 = input("is it at least a famous user, namesnipe, old account or a card that is going up? (yes/no): ")
@@ -54,6 +54,8 @@ while True:
                     else:
                         print("")
                         print("Repeat that again, remember to answer yes or no but in lowercase...")
+            elif fameofcard <= 1000:
+                totalprice += 15
             elif fameofcard <= 2000:
                 totalprice += 30
             elif fameofcard <= 5000:
